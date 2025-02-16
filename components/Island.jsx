@@ -15,7 +15,7 @@ const Island = (props) => {
   const islandRef = useRef();
   const { nodes, materials } = useGLTF("/island.glb");
   return (
-    <group ref={islandRef} {...props}>
+    <a.group ref={islandRef} {...props}>
       <mesh
         geometry={nodes.polySurface944_tree_body_0.geometry}
         material={materials.PaletteMaterial001}
@@ -44,7 +44,7 @@ const Island = (props) => {
         geometry={nodes.pCube11_rocks1_0.geometry}
         material={materials.PaletteMaterial001}
       />
-    </group>
+    </a.group>
   );
 };
 
